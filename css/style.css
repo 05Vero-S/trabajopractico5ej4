@@ -2,8 +2,48 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url('../img/fondo-galaxia-realista_23-2148987183.jpg');
+    background-size: cover;
+    color: darkorchid;
+    font-size: 20px;
+
 }
 
 main{
     flex-grow: 1;
+}
+
+.fechaHora{
+    width: 50%;
+}
+
+.fechaHora p{
+    display: inline-block;
+    line-height: 2px;
+}
+
+.fecha{
+    text-align: center;
+    font-size: 30px;
+    background:lightslategray;
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+    width: 100%;
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
+    background: lightgrey;
+}
+
+.reloj .boxSegundos{
+    display: inline-block;
+}
+
+.reloj .segundos, .reloj .amPm{
+    font-size: 12px;
+    display: block;
+
 }
