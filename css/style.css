@@ -1,10 +1,10 @@
-body{
+ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-image: url('../img/fondo-galaxia-realista_23-2148987183.jpg');
     background-size: cover;
-    color: darkorchid;
+    color: white;
     font-size: 20px;
 
 }
@@ -43,7 +43,7 @@ main{
 }
 
 .reloj .segundos, .reloj .amPm{
-    font-size: 12px;
+    font-size: 30px;
     display: block;
 
 }

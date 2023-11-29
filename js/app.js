@@ -1,14 +1,16 @@
 (function (){
     const actualizarHora = function(){
-        const fecha= new Date,
+        const fecha= new Date(),
         horas= fecha.getHours(),
-        //amPm,
+        
         minutos=fecha.getMinutes(),
         segundos=fecha.getSeconds(),
         diaSemana=fecha.getDay(),
         dia=fecha.getDate(),
-        mes=fecha.getMonth(),
+        mes = fecha.getMonth(),
         anio=fecha.getFullYear();
+
+        
 
         const parrafoHora=document.getElementById('horas'),
         parrafoAmPm=document.getElementById('amPm'),
@@ -24,11 +26,12 @@
 
         parrafoDia.textContent = dia;
 
-        const mes=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        const meses =['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        parrafoMes.textContent = meses[mes];
 
         parrafoAnio.textContent = anio;
 
-        if (horas >= 12){
+        /*if (horas >= 12){
             horas = horas - 12;
             amPm='PM';
 
@@ -38,18 +41,18 @@
 
         if(horas == 0){
             horas == 12;
-        }
+        };*/
 
         parrafoHora.textContent = horas;
-        parrafoAmPm.textContent = amPm;
+        //parrafoAmPm.textContent = amPm;
 
         if (minutos < 10){
-            minutos='0' + minutos;
-        }
+            minutos='0' + minutos
+        };
 
-        if(segundos <10{
-            segundos = '0' + segundos;
-        })
+        if (segundos < 10){
+            segundos = '0' + segundos
+        };
 
         parrafoMinutos.textContent = minutos;
         parrafoSegundos.textContent = segundos;
